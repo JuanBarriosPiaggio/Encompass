@@ -128,7 +128,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      <CtaBand photo={photos.heroLantern} />
+      <CtaBand photo={photos.extBifold} />
     </>
   );
 }

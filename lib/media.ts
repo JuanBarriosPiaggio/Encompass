@@ -37,7 +37,7 @@ export const photos = {
   extIsland: photo("ext-island", "321135f90bec656c_16-3304", "Kitchen island in a rear extension"),
   extSide: photo("ext-side", "5061c8cd0bec6672_16-5462", "Glass side return opening to the garden"),
   extDining: photo("ext-dining", "db61795e0bec6cf3_16-5463", "Dining area under rooflights"),
-  extSteel: photo("ext-steel", "be1123280bec72b3_16-3291", "Living room with black steel-framed doors"),
+  extSteel: photo("ext-steel", "be1123280bec72b3_16-3291", "Living room with black steel-framed doors", { focal: "center 45%" }),
   extTeal: photo("ext-teal", "7f211b070bec71c3_16-3315", "Teal sofas under rooflights"),
   extPendant: photo("ext-pendant", "595112a30bec72d5_16-9223", "Dining table with a feature pendant"),
   extBlueSofa: photo("ext-blue-sofa", "2e21db9b0bec7307_16-3291", "Living space with a blue sofa and rooflights"),
@@ -141,7 +141,7 @@ export const photos = {
   lynton: photo("lynton", "4ff15fa90be2e986_16-3947", "Lynton Road, Camberwell"),
 } as const satisfies Record<string, Photo>;
 
-export const heroSlides: Photo[] = [photos.heroKitchen, photos.heroHouse, photos.heroLoft, photos.heroLantern];
+export const heroSlides: Photo[] = [photos.heroKitchen, photos.extSteel, photos.heroLoft, photos.loftEnsuite];
 
 export const loftGallery: Photo[] = [
   photos.loftBedroom,
