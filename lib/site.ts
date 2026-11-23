@@ -16,7 +16,7 @@ export const site = {
   houzzYears: [2019, 2020, 2021, 2022, 2024, 2026] as const,
   instagram: "https://www.instagram.com/encompasslondon/",
   facebook: "https://www.facebook.com/encompassldn",
-  logo: "/brand/logo.jpg",
+  logo: "/brand/logo.png",
 } as const;
 
 export const metal =

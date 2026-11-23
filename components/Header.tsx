@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { mobileNav, primaryNav } from "@/lib/site";
+import { mobileNav, primaryNav, site } from "@/lib/site";
 import { Sheen } from "@/components/Buttons";
 
 export function Header() {
@@ -63,7 +63,7 @@ export function Header() {
   return (
     <header className={solid || open ? "site-header is-solid" : "site-header"}>
       <Link href="/" className="logo" aria-label="Encompass, home">
-        <Image src="/brand/logo.jpg" alt="" width={500} height={500} priority />
+        <Image src={site.logo} alt="" width={500} height={500} priority />
       </Link>
       <nav className="desk-nav" aria-label="Primary">
         {primaryNav.map((item) => (
@@ -96,7 +96,7 @@ export function Header() {
         <div ref={menuRef} id="site-menu" className="menu" role="dialog" aria-modal="true" aria-label="Menu">
           <div className="menu-top">
             <Link href="/" className="logo" aria-label="Encompass, home">
-              <Image src="/brand/logo.jpg" alt="" width={500} height={500} />
+              <Image src={site.logo} alt="" width={500} height={500} />
             </Link>
             <button ref={closeRef} className="menu-btn" type="button" onClick={() => setOpen(false)}>
               Close

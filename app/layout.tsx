@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     siteName: site.name,
-    images: [{ url: "/brand/logo.jpg", alt: "Encompass" }],
+    images: [{ url: site.logo, alt: "Encompass" }],
   },
-  icons: { icon: "/brand/logo.jpg" },
+  icons: { icon: site.logo, apple: site.logo },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

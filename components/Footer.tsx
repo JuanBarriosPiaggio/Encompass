@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <Link href="/" className="footer-logo" aria-label="Encompass, home">
-        <Image src="/brand/logo.jpg" alt="" width={500} height={500} />
+        <Image src={site.logo} alt="" width={500} height={500} />
       </Link>
       <div className="footer-grid">
         <div>
