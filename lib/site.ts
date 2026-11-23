@@ -17,6 +17,7 @@ export const site = {
   instagram: "https://www.instagram.com/encompasslondon/",
   facebook: "https://www.facebook.com/encompassldn",
   logo: "/brand/logo.png",
+  headerLogo: "/brand/logo-header.png",
 } as const;
 
 export const metal =
