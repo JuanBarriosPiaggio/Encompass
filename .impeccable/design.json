@@ -1,0 +1,21 @@
+{
+  "name": "Encompass London",
+  "colors": {
+    "ink": "#0A0A0A",
+    "panel": "#141414",
+    "panelRaised": "#1C1C1C",
+    "gold": "#E0A030",
+    "bronze": "#B06030",
+    "goldLight": "#F0D090",
+    "text": "#F3EFE6",
+    "muted": "#A8A196",
+    "paper": "#F3EFE6",
+    "metal": "linear-gradient(135deg, #B06030 0%, #E0A030 45%, #F0D090 70%, #E0A030 100%)"
+  },
+  "typography": {
+    "display": "Bodoni Moda",
+    "sans": "Albert Sans"
+  },
+  "shape": "square",
+  "motion": ["ken-burns", "clip-path-wipe", "parallax", "underline-draw", "button-sheen"]
+}
