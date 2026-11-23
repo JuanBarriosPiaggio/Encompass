@@ -20,7 +20,7 @@ export function Photo({
       priority={priority}
       sizes={sizes}
       className={className}
-      style={{ objectPosition: photo.focal ?? "center" }}
+      style={{ objectFit: "cover", objectPosition: photo.focal ?? "center" }}
     />
   );
 }

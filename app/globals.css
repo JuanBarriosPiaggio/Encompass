@@ -120,8 +120,21 @@ a { color: inherit; text-decoration: none; }
   background: var(--metal);
 }
 
-.frame { position: relative; overflow: hidden; background: var(--panel); }
-.frame img { object-fit: cover; outline: 1px solid oklch(1 0 0 / 0.1); outline-offset: -1px; }
+.frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: var(--panel);
+}
+.hero img,
+.frame img,
+.service-media img,
+.page-hero img,
+.closer img {
+  object-fit: cover;
+}
+.frame img { outline: 1px solid oklch(1 0 0 / 0.1); outline-offset: -1px; }
 
 .btn {
   position: relative;
