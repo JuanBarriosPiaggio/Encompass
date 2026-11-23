@@ -105,7 +105,7 @@ export default function LoftPage() {
           </details>
         ))}
         <p style={{ marginTop: "1.5rem" }}>
-          <Link className="text-link" href="/areas/earlsfield">
+          <Link className="text-link" href="/loft-conversions-earlsfield/">
             Loft conversions in Earlsfield
           </Link>
         </p>

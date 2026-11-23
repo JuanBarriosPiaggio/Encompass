@@ -44,17 +44,13 @@ export function Hero() {
       </div>
       <div className="hero-plate">
         <p className="label">Earlsfield · South West London</p>
-        <h1>
-          Lofts and extensions, <br />
-          designed and built <br />
-          by one team.
-        </h1>
+        <h1>Loft conversions & extensions in Earlsfield, designed and built by one team.</h1>
         <div className="hero-actions">
           <Link href="/estimate" className="btn btn-gold">
             <Sheen />
             <span className="btn-label">Get an instant estimate</span>
           </Link>
-          <Link href="/projects" className="btn btn-ghost">
+          <Link href="/portfolio/" className="btn btn-ghost">
             View our work
           </Link>
         </div>

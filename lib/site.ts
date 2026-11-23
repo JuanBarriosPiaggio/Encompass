@@ -23,33 +23,45 @@ export const metal =
   "linear-gradient(135deg, #B06030 0%, #E0A030 45%, #F0D090 70%, #E0A030 100%)";
 
 export const primaryNav = [
-  { href: "/projects", label: "Work" },
-  { href: "/loft-conversions", label: "Lofts" },
-  { href: "/extensions", label: "Extensions" },
-  { href: "/kitchens", label: "Kitchens" },
-  { href: "/staircases", label: "Joinery" },
-  { href: "/about", label: "About" },
+  { href: "/portfolio/", label: "Projects" },
+  { href: "/areas/", label: "Areas" },
+  { href: "/testimonials/", label: "Reviews" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/about/", label: "About" },
+  { href: "/contact/", label: "Contact" },
 ] as const;
 
 export const mobileNav = [
-  { href: "/projects", label: "Work" },
-  { href: "/loft-conversions", label: "Loft conversions" },
-  { href: "/extensions", label: "Extensions" },
-  { href: "/kitchens", label: "Kitchens" },
-  { href: "/bathrooms", label: "Bathrooms" },
-  { href: "/interiors", label: "Interiors" },
-  { href: "/staircases", label: "Staircases & joinery" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/loft-conversions/", label: "Loft conversions" },
+  { href: "/house-extensions-earlsfield/", label: "House extensions" },
+  { href: "/home-refurbishments-earlsfield-london/", label: "Home refurbishments" },
+  { href: "/interior-design/", label: "Interior design" },
+  { href: "/kitchens/", label: "Kitchens" },
+  { href: "/bathrooms/", label: "Bathrooms" },
+  { href: "/staircases-joinery/", label: "Staircases & joinery" },
+  { href: "/retail/", label: "Retail & commercial" },
+  { href: "/developments/", label: "Developments" },
+  { href: "/services/", label: "All services" },
+  { href: "/portfolio/", label: "Projects" },
+  { href: "/areas/", label: "Areas" },
+  { href: "/testimonials/", label: "Reviews" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/faq/", label: "FAQ" },
+  { href: "/about/", label: "About" },
+  { href: "/contact/", label: "Contact" },
 ] as const;
 
 export const serviceLinks = [
-  { href: "/loft-conversions", label: "Loft conversions" },
-  { href: "/extensions", label: "Extensions" },
-  { href: "/kitchens", label: "Kitchens" },
-  { href: "/bathrooms", label: "Bathrooms" },
-  { href: "/interiors", label: "Interiors & refurbishments" },
-  { href: "/staircases", label: "Staircases & joinery" },
+  { href: "/loft-conversions/", label: "Loft conversions" },
+  { href: "/house-extensions-earlsfield/", label: "House extensions" },
+  { href: "/home-refurbishments-earlsfield-london/", label: "Home refurbishments" },
+  { href: "/interior-design/", label: "Interior design" },
+  { href: "/kitchens/", label: "Kitchens" },
+  { href: "/bathrooms/", label: "Bathrooms" },
+  { href: "/staircases-joinery/", label: "Staircases & joinery" },
+  { href: "/retail/", label: "Retail & commercial" },
+  { href: "/developments/", label: "Developments" },
+  { href: "/services/", label: "All services" },
 ] as const;
 
 export function formatGBP(value: number) {

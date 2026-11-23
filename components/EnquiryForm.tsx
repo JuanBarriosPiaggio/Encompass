@@ -1,13 +1,13 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { site } from "@/lib/site";
+import { useRouter } from "next/navigation";
 import { Sheen } from "@/components/Buttons";
 
-const subjects = ["Loft conversion", "Extension", "Kitchen", "Bathroom", "Interior", "Staircase", "Something else"];
+const subjects = ["Loft conversion", "Extension", "Kitchen", "Bathroom", "Interior", "Staircase", "Retail", "Development", "Something else"];
 
 export function EnquiryForm() {
-  const [sent, setSent] = useState(false);
+  const router = useRouter();
   const [values, setValues] = useState({ name: "", email: "", phone: "", subject: subjects[0], message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -19,20 +19,12 @@ export function EnquiryForm() {
     if (values.phone.replace(/\D/g, "").length < 10) next.phone = "Enter a phone number.";
     if (values.message.trim().length < 8) next.message = "Tell us a little about the house.";
     setErrors(next);
-    if (Object.keys(next).length === 0) setSent(true);
-  }
-
-  if (sent) {
-    return (
-      <div className="thanks">
-        <p className="label">Thank you</p>
-        <h3>We have your note on this page.</h3>
-        <p className="est-note">Nothing is sent from this demo. Call {site.phoneDisplay} or email {site.email} and a director will pick it up.</p>
-        <p className="est-note" style={{ marginTop: "1rem" }}>
-          {values.name.trim()} · {values.subject}
-        </p>
-      </div>
+    if (Object.keys(next).length) return;
+    sessionStorage.setItem(
+      "encompass-enquiry",
+      JSON.stringify({ name: values.name.trim(), subject: values.subject }),
     );
+    router.push("/enquiry-thank-you/");
   }
 
   return (

@@ -1,5 +1,6 @@
 export type Area = {
   slug: string;
+  path: string;
   name: string;
   postcodes: string;
   council: string;
@@ -10,6 +11,7 @@ export type Area = {
 export const areas: Area[] = [
   {
     slug: "earlsfield",
+    path: "loft-conversions-earlsfield",
     name: "Earlsfield",
     postcodes: "SW18",
     council: "the London Borough of Wandsworth",
@@ -19,6 +21,7 @@ export const areas: Area[] = [
   },
   {
     slug: "wandsworth",
+    path: "loft-conversions-wandsworth",
     name: "Wandsworth",
     postcodes: "SW18",
     council: "the London Borough of Wandsworth",
@@ -28,6 +31,7 @@ export const areas: Area[] = [
   },
   {
     slug: "wimbledon",
+    path: "loft-conversions-in-wimbledon",
     name: "Wimbledon",
     postcodes: "SW19 and SW20",
     council: "the London Borough of Merton",
@@ -37,6 +41,7 @@ export const areas: Area[] = [
   },
   {
     slug: "clapham",
+    path: "loft-conversions-clapham",
     name: "Clapham",
     postcodes: "SW11",
     council: "the London Borough of Lambeth",
@@ -46,6 +51,7 @@ export const areas: Area[] = [
   },
   {
     slug: "twickenham",
+    path: "twickenham-loft-conversion",
     name: "Twickenham",
     postcodes: "TW1 and TW2",
     council: "the London Borough of Richmond upon Thames",
@@ -55,6 +61,7 @@ export const areas: Area[] = [
   },
   {
     slug: "richmond",
+    path: "loft-conversions-in-richmond-upon-thames",
     name: "Richmond",
     postcodes: "TW9 and TW10",
     council: "the London Borough of Richmond upon Thames",
@@ -64,6 +71,7 @@ export const areas: Area[] = [
   },
   {
     slug: "kingston",
+    path: "loft-conversions-in-kingston-upon-thames",
     name: "Kingston",
     postcodes: "KT2 and KT5",
     council: "the Royal Borough of Kingston upon Thames",
@@ -73,6 +81,7 @@ export const areas: Area[] = [
   },
   {
     slug: "sutton",
+    path: "loft-conversions-sutton",
     name: "Sutton",
     postcodes: "SM1, SM2 and SM3",
     council: "the London Borough of Sutton",
@@ -82,6 +91,7 @@ export const areas: Area[] = [
   },
   {
     slug: "ewell",
+    path: "loft-conversions-ewell",
     name: "Ewell",
     postcodes: "KT17",
     council: "Epsom and Ewell Borough Council",
@@ -91,6 +101,7 @@ export const areas: Area[] = [
   },
   {
     slug: "epsom",
+    path: "loft-conversions-epsom",
     name: "Epsom",
     postcodes: "KT19",
     council: "Epsom and Ewell Borough Council",
@@ -100,6 +111,7 @@ export const areas: Area[] = [
   },
   {
     slug: "hampton",
+    path: "hampton-loft-conversion",
     name: "Hampton",
     postcodes: "TW12",
     council: "the London Borough of Richmond upon Thames",
@@ -109,6 +121,7 @@ export const areas: Area[] = [
   },
   {
     slug: "peckham",
+    path: "loft-conversions-peckham",
     name: "Peckham",
     postcodes: "SE15",
     council: "the London Borough of Southwark",
@@ -118,6 +131,7 @@ export const areas: Area[] = [
   },
   {
     slug: "camberwell",
+    path: "loft-conversions-camberwell",
     name: "Camberwell",
     postcodes: "SE5",
     council: "the London Borough of Southwark",
@@ -127,6 +141,7 @@ export const areas: Area[] = [
   },
   {
     slug: "battersea",
+    path: "loft-conversions-battersea",
     name: "Battersea",
     postcodes: "SW11",
     council: "the London Borough of Wandsworth",
@@ -136,6 +151,7 @@ export const areas: Area[] = [
   },
   {
     slug: "balham",
+    path: "loft-conversions-in-balham",
     name: "Balham",
     postcodes: "SW12",
     council: "the London Borough of Wandsworth",
@@ -145,6 +161,7 @@ export const areas: Area[] = [
   },
   {
     slug: "tooting",
+    path: "loft-conversions-tooting",
     name: "Tooting",
     postcodes: "SW17",
     council: "the London Borough of Wandsworth",
@@ -154,6 +171,7 @@ export const areas: Area[] = [
   },
   {
     slug: "streatham",
+    path: "loft-conversions-streatham",
     name: "Streatham",
     postcodes: "SW16",
     council: "the London Borough of Lambeth",
@@ -163,6 +181,7 @@ export const areas: Area[] = [
   },
   {
     slug: "fulham",
+    path: "loft-conversions-fulham",
     name: "Fulham",
     postcodes: "SW6",
     council: "the London Borough of Hammersmith and Fulham",
@@ -172,6 +191,7 @@ export const areas: Area[] = [
   },
   {
     slug: "putney",
+    path: "loft-conversions-putney",
     name: "Putney",
     postcodes: "SW15",
     council: "the London Borough of Wandsworth",
@@ -181,6 +201,7 @@ export const areas: Area[] = [
   },
   {
     slug: "surbiton",
+    path: "loft-conversions-surbiton",
     name: "Surbiton",
     postcodes: "KT6",
     council: "the Royal Borough of Kingston upon Thames",
@@ -190,6 +211,7 @@ export const areas: Area[] = [
   },
   {
     slug: "raynes-park",
+    path: "raynes-park-loft-conversion",
     name: "Raynes Park",
     postcodes: "SW20",
     council: "the London Borough of Merton",
@@ -199,6 +221,7 @@ export const areas: Area[] = [
   },
   {
     slug: "motspur-park",
+    path: "motspur-park-loft-conversion",
     name: "Motspur Park",
     postcodes: "KT3",
     council: "the Royal Borough of Kingston upon Thames and the London Borough of Merton",
@@ -208,6 +231,7 @@ export const areas: Area[] = [
   },
   {
     slug: "east-sheen",
+    path: "loft-conversions-east-sheen",
     name: "East Sheen",
     postcodes: "SW14",
     council: "the London Borough of Richmond upon Thames",
@@ -217,6 +241,7 @@ export const areas: Area[] = [
   },
   {
     slug: "teddington",
+    path: "teddington-loft-conversion",
     name: "Teddington",
     postcodes: "TW11",
     council: "the London Borough of Richmond upon Thames",
@@ -224,8 +249,74 @@ export const areas: Area[] = [
       "Teddington mixes Victorian and Edwardian houses with inter-war streets towards Hampton. Loft conversions are a straightforward way to add a bedroom. Rear extensions suit the gardens behind the older terraces.",
     neighbours: ["hampton", "twickenham", "kingston"],
   },
+  {
+    slug: "chiswick",
+    path: "loft-conversions-chiswick",
+    name: "Chiswick",
+    postcodes: "W4",
+    council: "the London Borough of Hounslow",
+    intro:
+      "Chiswick is Victorian and Edwardian terraces and larger family houses between the river and the A4. Lofts and side returns are the usual way these houses grow.",
+    neighbours: ["hammersmith", "fulham"],
+  },
+  {
+    slug: "walton-on-thames",
+    path: "loft-conversion-walton-on-thames",
+    name: "Walton-on-Thames",
+    postcodes: "KT12",
+    council: "Elmbridge Borough Council",
+    intro:
+      "Walton-on-Thames is in Surrey, with inter-war semis and older streets near the town. Roofs are often large enough for a dormer, and planning is decided by Elmbridge, not a London borough.",
+    neighbours: ["hampton", "molesey", "kingston"],
+  },
+  {
+    slug: "molesey",
+    path: "molesey-loft-conversion",
+    name: "Molesey",
+    postcodes: "KT8",
+    council: "Elmbridge Borough Council",
+    intro:
+      "Molesey sits by the Thames, East and West, with Victorian cottages and later semis. Loft rooms and rear extensions are the work we are usually asked to look at.",
+    neighbours: ["walton-on-thames", "hampton", "kingston"],
+  },
+  {
+    slug: "hammersmith",
+    path: "hammersmith-loft-conversion",
+    name: "Hammersmith",
+    postcodes: "W6",
+    council: "the London Borough of Hammersmith and Fulham",
+    intro:
+      "Hammersmith is Victorian terraces and mansion flats between the Broadway and the river. Terrace lofts and tight side returns are the usual projects.",
+    neighbours: ["fulham", "chiswick"],
+  },
+  {
+    slug: "dulwich",
+    path: "dulwich-loft-conversion",
+    name: "Dulwich",
+    postcodes: "SE21 and SE22",
+    council: "the London Borough of Southwark",
+    intro:
+      "Dulwich has Victorian and Edwardian family houses, many of them semis, with roofs and gardens that can take a loft or a rear extension. A number of streets are in conservation areas.",
+    neighbours: ["peckham", "camberwell"],
+  },
 ];
+
+const smallWords = new Set(["in", "on", "upon", "and", "the"]);
+
+export function areaHeading(path: string) {
+  return path
+    .split("-")
+    .map((word, index) => {
+      if (index > 0 && smallWords.has(word) && word !== "in" && word !== "on" && word !== "upon") return word;
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+}
 
 export function getArea(slug: string) {
   return areas.find((area) => area.slug === slug);
+}
+
+export function getAreaByPath(path: string) {
+  return areas.find((area) => area.path === path);
 }

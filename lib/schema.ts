@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export function businessJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
+    "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
     name: site.name,
     alternateName: site.tradeName,
     url: site.url,

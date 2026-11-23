@@ -3,6 +3,16 @@ import Link from "next/link";
 import { areas } from "@/lib/areas";
 import { serviceLinks, site } from "@/lib/site";
 
+const company = [
+  { href: "/faq/", label: "FAQ" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/testimonials/", label: "Testimonials" },
+  { href: "/privacy-policy/", label: "Privacy" },
+  { href: "/terms-conditions/", label: "Terms" },
+  { href: "/gallery/", label: "Gallery" },
+  { href: "/estimate/", label: "Instant estimate" },
+];
+
 export function Footer() {
   return (
     <footer className="site-footer">
@@ -36,6 +46,13 @@ export function Footer() {
               Facebook
             </a>
           </p>
+          {company.map((item) => (
+            <p key={item.href}>
+              <Link className="text-link" href={item.href}>
+                {item.label}
+              </Link>
+            </p>
+          ))}
         </div>
         <div>
           <h2>Work</h2>
@@ -47,7 +64,7 @@ export function Footer() {
             </p>
           ))}
           <p>
-            <Link className="text-link" href="/projects">
+            <Link className="text-link" href="/portfolio/">
               All projects
             </Link>
           </p>
@@ -56,7 +73,7 @@ export function Footer() {
           <h2>Areas</h2>
           <div className="areas">
             {areas.map((area) => (
-              <Link key={area.slug} href={`/areas/${area.slug}`}>
+              <Link key={area.slug} href={`/${area.path}/`}>
                 {area.name}
               </Link>
             ))}

@@ -5,10 +5,10 @@ import { breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact the Earlsfield studio",
+  title: "Contact Us For Loft Conversions",
   description:
-    "Encompass London, 338 Garratt Lane, Earlsfield, London SW18 4EL. Call 020 8871 3323 or email jason@encompasslondon.com.",
-  alternates: { canonical: "/contact" },
+    "Contact Encompass London for loft conversions. 338 Garratt Lane, Earlsfield, London SW18 4EL. Call 020 8871 3323 or email jason@encompasslondon.com.",
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {
@@ -22,7 +22,7 @@ export default function ContactPage() {
       />
       <header className="hero-plain">
         <p className="label">Studio</p>
-        <h1>Visit, call, or write.</h1>
+        <h1>Contact Us For Loft Conversions</h1>
       </header>
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="contact-grid">

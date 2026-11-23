@@ -54,7 +54,7 @@ export function ProjectsBrowser() {
             const lead = project.images[0];
             const low = Boolean(lead?.low);
             return (
-              <Link key={project.slug} href={`/projects/${project.slug}`} className={low ? "work-card low" : "work-card"}>
+              <Link key={project.slug} href={`/project/${project.slug}/`} className={low ? "work-card low" : "work-card"}>
                 {lead ? (
                   <span className="frame">
                     <Photo photo={lead} sizes={low ? "260px" : "(max-width: 700px) 100vw, 33vw"} />

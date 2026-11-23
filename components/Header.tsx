@@ -4,7 +4,21 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { mobileNav, primaryNav } from "@/lib/site";
+import { photos } from "@/lib/media";
+import { Photo } from "@/components/Photo";
 import { Sheen } from "@/components/Buttons";
+
+const services = [
+  { href: "/loft-conversions/", label: "Loft conversions", image: photos.loftBedroom },
+  { href: "/house-extensions-earlsfield/", label: "House extensions", image: photos.extBifold },
+  { href: "/home-refurbishments-earlsfield-london/", label: "Home refurbishments", image: photos.intLiving },
+  { href: "/interior-design/", label: "Interior design", image: photos.intPink },
+  { href: "/kitchens/", label: "Kitchens", image: photos.kitTeal },
+  { href: "/bathrooms/", label: "Bathrooms", image: photos.bathBlue },
+  { href: "/staircases-joinery/", label: "Staircases & joinery", image: photos.stairOak },
+  { href: "/retail/", label: "Retail & commercial", image: photos.intSlat },
+  { href: "/developments/", label: "Developments", image: photos.extDetached },
+];
 
 export function Header() {
   const path = usePathname();
@@ -65,16 +79,28 @@ export function Header() {
         <img src="/brand/header-chrome.png" alt="" width={1024} height={969} />
       </Link>
       <nav className="desk-nav" aria-label="Primary">
+        <div className="nav-drop">
+          <Link href="/services/" aria-current={current("/services/") ? "page" : undefined}>
+            Services
+          </Link>
+          <div className="mega">
+            {services.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <span className="frame">
+                  <Photo photo={item.image} sizes="180px" />
+                </span>
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
         {primaryNav.map((item) => (
           <Link key={item.href} href={item.href} aria-current={current(item.href) ? "page" : undefined}>
             {item.label}
           </Link>
         ))}
-        <Link href="/contact" aria-current={current("/contact") ? "page" : undefined}>
-          Contact
-        </Link>
       </nav>
-      <Link href="/estimate" className="btn btn-gold header-cta">
+      <Link href="/estimate/" className="btn btn-gold header-cta">
         <Sheen />
         <span className="btn-label">
           <span className="btn-short">Estimate</span>
@@ -108,7 +134,7 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <Link href="/estimate" className="btn btn-gold">
+          <Link href="/estimate/" className="btn btn-gold">
             <Sheen />
             <span className="btn-label">Instant estimate</span>
           </Link>

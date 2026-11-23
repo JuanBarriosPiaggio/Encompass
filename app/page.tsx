@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { Estimator } from "@/components/Estimator";
@@ -7,6 +8,13 @@ import { Photo } from "@/components/Photo";
 import { site } from "@/lib/site";
 import { areas } from "@/lib/areas";
 import { photos } from "@/lib/media";
+import { reviews } from "@/lib/reviews";
+
+export const metadata: Metadata = {
+  title: { absolute: "Loft Conversions Earlsfield | Encompass London" },
+  description:
+    "Loft conversions and extensions in Earlsfield, designed and built by one team. Encompass London, 338 Garratt Lane, SW18 4EL.",
+};
 
 const services = [
   { href: "/loft-conversions", title: "Loft conversions", className: "s-loft", image: photos.loftBedroom, index: "01" },
@@ -101,10 +109,10 @@ export default function HomePage() {
           ))}
         </div>
         <div className="review-grid">
-          {[0, 1, 2].map((item) => (
-            <article key={item} className="review">
-              <p>[Paste real Houzz review here]</p>
-              <footer>[Name]</footer>
+          {reviews.slice(0, 3).map((review) => (
+            <article key={review.name} className="review">
+              <p>“{review.quote}”</p>
+              <footer>{review.name}</footer>
             </article>
           ))}
         </div>
@@ -121,7 +129,7 @@ export default function HomePage() {
         </div>
         <div className="area-strip">
           {areas.map((area) => (
-            <Link key={area.slug} href={`/areas/${area.slug}`}>
+            <Link key={area.slug} href={`/${area.path}/`}>
               {area.name}
               <span>{area.postcodes}</span>
             </Link>

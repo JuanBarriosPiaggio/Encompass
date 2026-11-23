@@ -4,13 +4,10 @@ import path from "node:path";
 const nextConfig: NextConfig = {
   output: "standalone",
   outputFileTracingRoot: path.join(__dirname),
+  trailingSlash: true,
   poweredByHeader: false,
   images: {
     unoptimized: true,
-    remotePatterns: [
-      { protocol: "https", hostname: "st.hzcdn.com", pathname: "/simgs/**" },
-      { protocol: "https", hostname: "www.encompasslofts.com", pathname: "/wp-content/uploads/**" },
-    ],
   },
 };
 

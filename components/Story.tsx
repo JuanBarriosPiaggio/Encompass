@@ -53,10 +53,15 @@ export function Story({ project }: { project: Project }) {
         <div className="measure">
           <p>{project.summary}</p>
           <p style={{ marginTop: "1rem" }}>
-            <Link className="text-link" href="/projects">
+            <Link className="text-link" href="/portfolio/">
               All projects
             </Link>
           </p>
+          {project.pending ? (
+            <p className="est-note" style={{ marginTop: "1rem" }}>
+              Photos to come. The pictures below are other Encompass loft and extension rooms, shown until photographs of this house are published.
+            </p>
+          ) : null}
         </div>
       </div>
 

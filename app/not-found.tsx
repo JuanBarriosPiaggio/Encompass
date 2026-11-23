@@ -11,7 +11,7 @@ export default function NotFound() {
           <Sheen />
           <span className="btn-label">Back to the studio</span>
         </Link>
-        <Link href="/projects" className="btn btn-ghost">
+        <Link href="/portfolio/" className="btn btn-ghost">
           View the work
         </Link>
       </div>

@@ -1,3 +1,5 @@
+import { imageFiles } from "@/lib/image-files";
+
 export type Photo = {
   id: string;
   src: string;
@@ -7,10 +9,10 @@ export type Photo = {
   focal?: string;
 };
 
-function photo(id: string, file: string, alt: string, extra?: Partial<Pick<Photo, "low" | "portrait" | "focal">>): Photo {
+function photo(id: string, _file: string, alt: string, extra?: Partial<Pick<Photo, "low" | "portrait" | "focal">>): Photo {
   return {
     id,
-    src: `https://st.hzcdn.com/simgs/${file}/home-design.jpg`,
+    src: imageFiles[id],
     alt,
     ...extra,
   };

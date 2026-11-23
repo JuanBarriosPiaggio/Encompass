@@ -1,0 +1,71 @@
+# Redirects
+# Canonical site: https://www.encompasslofts.com
+# All redirects are 301.
+
+## Domains
+https://encompasslofts.com/*  ->  https://www.encompasslofts.com/:path
+https://www.encompasslondon.com/* and https://encompasslondon.com/* follow the path map below, then the same path on the canonical host when the path exists.
+
+## encompasslondon.com
+/contact-us/  ->  /contact/
+/project/:slug/  ->  /project/:slug/
+/gallery/  ->  /gallery/
+/portfolio/  ->  /portfolio/
+/loft-conversions/  ->  /loft-conversions/
+/kitchens/  ->  /kitchens/
+/bathrooms/  ->  /bathrooms/
+/services/  ->  /services/
+/retail/  ->  /retail/
+/developments/  ->  /developments/
+/interior-design/  ->  /interior-design/
+/staircases-joinery/  ->  /staircases-joinery/
+anything else  ->  the closest page: services to /services/, projects to /portfolio/, areas to /areas/, otherwise /
+
+## Path changes on the new site
+/extensions/  ->  /house-extensions-earlsfield/
+/interiors/  ->  /home-refurbishments-earlsfield-london/
+/staircases/  ->  /staircases-joinery/
+/projects/  ->  /portfolio/
+/contact-us/  ->  /contact/
+/projects/elsygne-road/  ->  /project/loft-elsygne-road/
+/projects/brisbane-avenue/  ->  /project/brisbane/
+/projects/arundel-avenue/  ->  /project/arundel-road/
+/projects/richmond-park/  ->  /project/loft-richmond-park-road/
+/projects/earlsfield-road/  ->  /project/loft-earlsfield-road/
+/projects/oxford-avenue/  ->  /project/oxford-road/
+/projects/chatham-close/  ->  /project/kitchen-chatham/
+/projects/wilbury-avenue/  ->  /project/loft-wilbury-avenue/
+/projects/manor-crescent/  ->  /project/loft-manor-crescent/
+/projects/:slug/  ->  /project/:slug/
+/areas/earlsfield/  ->  /loft-conversions-earlsfield/
+/areas/wandsworth/  ->  /loft-conversions-wandsworth/
+/areas/wimbledon/  ->  /loft-conversions-in-wimbledon/
+/areas/clapham/  ->  /loft-conversions-clapham/
+/areas/twickenham/  ->  /twickenham-loft-conversion/
+/areas/richmond/  ->  /loft-conversions-in-richmond-upon-thames/
+/areas/kingston/  ->  /loft-conversions-in-kingston-upon-thames/
+/areas/sutton/  ->  /loft-conversions-sutton/
+/areas/ewell/  ->  /loft-conversions-ewell/
+/areas/epsom/  ->  /loft-conversions-epsom/
+/areas/hampton/  ->  /hampton-loft-conversion/
+/areas/peckham/  ->  /loft-conversions-peckham/
+/areas/camberwell/  ->  /loft-conversions-camberwell/
+/areas/battersea/  ->  /loft-conversions-battersea/
+/areas/balham/  ->  /loft-conversions-in-balham/
+/areas/tooting/  ->  /loft-conversions-tooting/
+/areas/streatham/  ->  /loft-conversions-streatham/
+/areas/fulham/  ->  /loft-conversions-fulham/
+/areas/putney/  ->  /loft-conversions-putney/
+/areas/surbiton/  ->  /loft-conversions-surbiton/
+/areas/raynes-park/  ->  /raynes-park-loft-conversion/
+/areas/motspur-park/  ->  /motspur-park-loft-conversion/
+/areas/east-sheen/  ->  /loft-conversions-east-sheen/
+/areas/teddington/  ->  /teddington-loft-conversion/
+/areas/chiswick/  ->  /loft-conversions-chiswick/
+/areas/walton-on-thames/  ->  /loft-conversion-walton-on-thames/
+/areas/molesey/  ->  /molesey-loft-conversion/
+/areas/hammersmith/  ->  /hammersmith-loft-conversion/
+/areas/dulwich/  ->  /dulwich-loft-conversion/
+
+## encompasslofts.com
+Every path that exists on the old loft site is kept at the same path on https://www.encompasslofts.com/ so the domain can 301 path-for-path.
