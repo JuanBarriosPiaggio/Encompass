@@ -14,7 +14,7 @@
   --sans: var(--font-sans), "Avenir Next", "Segoe UI", sans-serif;
   --display: var(--font-display), "Didot", "Bodoni MT", "Times New Roman", serif;
   --gutter: clamp(1.15rem, 3.2vw, 3.25rem);
-  --header: 8.45rem;
+  --header: 7.18rem;
   --ease: cubic-bezier(0.77, 0, 0.18, 1);
   color-scheme: dark;
 }
@@ -226,7 +226,7 @@ a { color: inherit; text-decoration: none; }
 .logo {
   display: block;
   flex: 0 0 auto;
-  width: 7.5rem;
+  width: 6.375rem;
   height: auto;
   line-height: 0;
 }
@@ -958,8 +958,8 @@ a { color: inherit; text-decoration: none; }
 .empty { color: var(--muted); padding: 2rem 0; }
 
 @media (min-width: 720px) {
-  :root { --header: 10.5rem; }
-  .logo { width: 9.94rem; }
+  :root { --header: 8.93rem; }
+  .logo { width: 8.45rem; }
   .btn-long { display: inline; }
   .btn-short { display: none; }
   .est-grid { grid-template-columns: 1fr 1fr; }
@@ -978,8 +978,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (min-width: 1080px) {
-  :root { --header: 11.63rem; }
-  .logo { width: 11.25rem; }
+  :root { --header: 9.89rem; }
+  .logo { width: 9.56rem; }
   .desk-nav { display: flex; }
   .menu-btn { display: none; }
   .header-cta { margin-left: 0.4rem; }
