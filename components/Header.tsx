@@ -111,11 +111,16 @@ export function Header() {
         ref={menuBtnRef}
         className="menu-btn"
         type="button"
+        aria-label="Open menu"
         aria-expanded={open}
         aria-controls="site-menu"
         onClick={() => setOpen(true)}
       >
-        Menu
+        <span className="burger" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </span>
       </button>
       {open ? (
         <div ref={menuRef} id="site-menu" className="menu" role="dialog" aria-modal="true" aria-label="Menu">
@@ -123,8 +128,8 @@ export function Header() {
             <Link href="/" className="logo" aria-label="Encompass, home">
               <img src="/brand/header-chrome.png" alt="" width={1024} height={969} />
             </Link>
-            <button ref={closeRef} className="menu-btn" type="button" onClick={() => setOpen(false)}>
-              Close
+            <button ref={closeRef} className="menu-btn" type="button" aria-label="Close menu" onClick={() => setOpen(false)}>
+              <span className="burger-x" aria-hidden="true" />
             </button>
           </div>
           <nav aria-label="Mobile">
